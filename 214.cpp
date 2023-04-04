@@ -7,19 +7,19 @@ using namespace std;
 int main(){
 
     int n;
-    cin >> n; 
-    
-    map <string, int> mp;
+    cin >> n; //число пар
+
+    map <string, int> mp; //создание mapa
 
     string key;
     int k = 0;
-    while (k != n) {
+    while (k != n) { //заполнение mapa
         cin >> key;
-        cin >> mp[key]; 
+        cin >> mp[key];
         k++;
     }
 
-    for (auto number : mp) { 
+    for (auto number : mp) { //вывод пар
         cout << number.first << '-' << number.second << endl;
     }
 
