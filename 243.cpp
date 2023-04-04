@@ -12,19 +12,19 @@ class Pupil {
             RusLangMark_ = new_RusLangMark;
             PhysicsMark_ = new_PhysicsMark;
             UpdateAverageMark();
-        }
-        
-        double GetMathMark() const { return MathMark_; }
+        } //конструктор
+
+        double GetMathMark() const { return MathMark_; } //геттеры
         double GetRusLangMark() const { return RusLangMark_; }
-        double GetPhysicsMark() const { return PhysicsMark_; } 
-        void SetAverageMark(const double& new_AverageMark) {
+        double GetPhysicsMark() const { return PhysicsMark_; }
+        void SetAverageMark(const double& new_AverageMark) { //сеттер
             AverageMark_ = new_AverageMark;
             UpdateAverageMark();
         }
 
     private:
-        void UpdateAverageMark() { AverageMark_ = (MathMark_ + RusLangMark_ + PhysicsMark_) / 3; }
-        
+        void UpdateAverageMark() { AverageMark_ = (MathMark_ + RusLangMark_ + PhysicsMark_) / 3; } //метод определения средней оценки
+
         string Name_;
         string Surname_;
         double MathMark_;
