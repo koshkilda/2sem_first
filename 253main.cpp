@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
-#include "253route.h"
+#include "253route.h" // включение headerа с объявлением classa
 
 using namespace std;
 
-Route::Route() {
+Route::Route() { // определение classa
     source_ = "Moscow";
     destination_ = "Saint Petersburg";
     UpdateLength();
@@ -15,7 +15,7 @@ Route::Route(const string& new_source, const string& new_destination) {
     destination_ = new_destination;
     UpdateLength();
 }
-        
+
 Route::~Route() {
     cout << "Used the route from " << source_ << " to " << destination_ << " (length = " << length_ << " meters)" << endl;
 }
@@ -38,9 +38,9 @@ void Route::SetDestination(const string& new_destination) {
 
 void Route::UpdateLength() { length_ = ComputeDistance(source_, destination_); }
 
-int main() {
-    Route route1; 
-    Route route2; 
-    
-    return 0; 
+int main() { // сам main
+    Route route1;
+    Route route2;
+
+    return 0;
 }
