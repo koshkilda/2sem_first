@@ -17,10 +17,10 @@ class Pupil {
         double GetMathMark() const { return MathMark_; } //геттеры
         double GetRusLangMark() const { return RusLangMark_; }
         double GetPhysicsMark() const { return PhysicsMark_; }
-        void SetAverageMark(const double& new_AverageMark) { //сеттер
-            AverageMark_ = new_AverageMark;
-            UpdateAverageMark();
-        }
+
+        void SetMathMark(double Mark) { MathMark_ = Mark; } //сеттеры
+        void SetRusLangMark(double Mark) { RusLangMark_ = Mark; }
+        void SetPhysicsMark(double Mark) { PhysicsMark_ = Mark; }
 
     private:
         void UpdateAverageMark() { AverageMark_ = (MathMark_ + RusLangMark_ + PhysicsMark_) / 3; } //метод определения средней оценки
