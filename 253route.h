@@ -15,6 +15,7 @@ class Route {
 
     private:
         void UpdateLength();
+        int ComputeDistance(string source, string destination);
         string source_;
         string destination_;
         int length_;
