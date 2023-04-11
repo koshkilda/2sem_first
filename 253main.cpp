@@ -38,6 +38,8 @@ void Route::SetDestination(const string& new_destination) {
 
 void Route::UpdateLength() { length_ = ComputeDistance(source_, destination_); }
 
+int Route::ComputeDistance(string source, string destination) {return 1000;}
+
 int main() { // сам main
     Route route1;
     Route route2;
